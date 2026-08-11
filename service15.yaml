@@ -1,0 +1,5 @@
+service:
+  name: new_git3
+  identifier: new_git3
+  orgIdentifier: default
+  projectIdentifier: first
