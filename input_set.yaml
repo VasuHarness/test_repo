@@ -1,5 +1,6 @@
 inputSet:
   name: my-input-set
+  tags: {}
   identifier: myinputset
   orgIdentifier: default
   projectIdentifier: first
