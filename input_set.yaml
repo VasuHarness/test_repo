@@ -24,4 +24,4 @@ inputSet:
                             store:
                               type: Github
                               spec:
-                                connectorRef: new_helm
+                                connectorRef: secret_connector
