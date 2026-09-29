@@ -1,0 +1,36 @@
+inputSet:
+  name: ashs
+  identifier: ashs
+  orgIdentifier: default
+  projectIdentifier: first
+
+  pipeline:
+    identifier: ddd
+    stages:
+      - stage:
+          identifier: qwerty
+          type: Deployment
+          spec:
+            service:
+              serviceInputs:
+                serviceDefinition:
+                  type: Kubernetes
+                  spec:
+                    manifests:
+                      - manifest:
+                          identifier: check
+                          type: K8sManifest
+                          spec:
+                            store:
+                              type: Github
+                              spec:
+                                connectorRef: account.secret_connector
+
+            environment:
+              infrastructureDefinitions:
+                - identifier: harness_local
+                  inputs:
+                    identifier: harness_local
+                    type: KubernetesDirect
+                    spec:
+                      connectorRef: account.new_connector
