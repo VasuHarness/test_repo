@@ -1,8 +1,26 @@
 inputSet:
-  name: ashs
-  identifier: ashs
+  name: my-input-set
+  identifier: myinputset
   orgIdentifier: default
   projectIdentifier: first
-
   pipeline:
-    identifier: dddeeeee
+    identifier: ddddeee
+    stages:
+      - stage:
+          identifier: ssssd
+          type: Deployment
+          spec:
+            service:
+              serviceInputs:
+                serviceDefinition:
+                  type: Kubernetes
+                  spec:
+                    manifests:
+                      - manifest:
+                          identifier: check
+                          type: K8sManifest
+                          spec:
+                            store:
+                              type: Github
+                              spec:
+                                connectorRef: account.testing_service
