@@ -25,4 +25,3 @@ inputSet:
                               type: Github
                               spec:
                                 connectorRef: secret_connector
-  isInlineHCEntity: false
