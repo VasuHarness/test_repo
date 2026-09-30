@@ -24,4 +24,4 @@ inputSet:
                             store:
                               type: Github
                               spec:
-                                connectorRef: new_git
+                                connectorRef: secret_connector
