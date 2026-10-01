@@ -11,18 +11,4 @@ inputSet:
           identifier: deploy
           type: Deployment
           spec:
-            service:
-              serviceInputs:
-                serviceDefinition:
-                  type: Kubernetes
-                  spec:
-                    manifests:
-                      - manifest:
-                          identifier: check
-                          type: K8sManifest
-                          spec:
-                            store:
-                              type: Github
-                              spec:
-                                connectorRef: secret_connector1
             environment: {}
