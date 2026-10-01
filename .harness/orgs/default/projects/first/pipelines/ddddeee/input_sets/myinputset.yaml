@@ -1,0 +1,26 @@
+inputSet:
+  name: myinputset
+  identifier: myinputset
+  orgIdentifier: default
+  projectIdentifier: first
+  pipeline:
+    identifier: ddddeee
+    stages:
+      - stage:
+          identifier: ssssd
+          type: Deployment
+          spec:
+            service:
+              serviceInputs:
+                serviceDefinition:
+                  type: Kubernetes
+                  spec:
+                    manifests:
+                      - manifest:
+                          identifier: check
+                          type: K8sManifest
+                          spec:
+                            store:
+                              type: Github
+                              spec:
+                                connectorRef: account.secret_connector1
