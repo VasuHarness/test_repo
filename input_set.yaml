@@ -25,4 +25,3 @@ inputSet:
                               type: Github
                               spec:
                                 connectorRef: account.secret_connector
-  isInlineHCEntity: false
