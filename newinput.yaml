@@ -12,4 +12,3 @@ inputSet:
           type: Deployment
           spec:
             environment: {}
-  isInlineHCEntity: false
